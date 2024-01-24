@@ -1,0 +1,255 @@
+nav {
+    flex-direction:row;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+
+#nav li {
+    display: inline-block;
+    padding-right: 1rem;
+}
+
+#nav a {
+    color: black;
+}
+
+h1, h2, h3, h4, li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    width: 65%;
+}
+
+#hero {
+    background-image: url(resources/background.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 30rem;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    /* Styles for screens with a maximum width of 600px */
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    /* Add more styles for other headings or elements as needed */
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 4rem;
+    align-items: flex-start;
+    height: 100%;
+    justify-content: center;
+}
+
+#banner * {
+    margin: 1rem;
+    padding: 0;
+}
+
+#banner h1 {
+    font-size: 2.5rem;
+}
+
+#banner p {
+    font-size: 1.5rem;
+}
+
+#banner button {
+    background-color:white;
+    padding: 1rem;
+    border-radius: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: larger;
+    width: 12rem;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 9rem;
+    background-color: #bb3b3c;
+    font-size: larger;
+}
+
+#about * {
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+
+#info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 9rem;
+}
+
+
+#info img {
+    max-width: 18rem;
+    border-radius: 20px;
+
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 1px;
+    border-radius: 20px;
+    height: 13rem;
+    width: 12rem;
+}
+
+.info-box * {
+    margin: 0.5rem 2rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#bb3b3c;
+    padding: 2rem;
+    color: white;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    color: white;
+}
+
+footer li {
+    padding: 2rem;
+    font-size:larger;
+}
+
+footer a {
+    color: white;
+}
+
+@media (max-width: 1276px) and (min-width: 801px) {
+   #hero {
+        height: fit-content;
+   }
+
+   #info {
+        margin: 2rem;
+   }
+}
+
+@media (max-width: 800px) {
+
+    #hero {
+        height: 37rem;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+
+
+    #nav {
+        width: 100%;
+    }
+
+    #nav li {
+        padding: 0 1rem;
+        font-size:large;
+    }
+    #banner {
+        width: 100%;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    #banner h1 {
+        font-size: 2rem;
+    }
+
+    #banner p {
+        font-size: 1.2rem;
+    }
+
+    #banner button {
+        width: 10rem;
+    }
+
+    #about {
+        padding: 5rem;
+    }
+
+    #about * {
+        width: 80%;
+    }
+
+    #info {
+        flex-direction: column;
+        margin: 3rem;
+    }
+
+    #info img {
+        display: none;
+    }
+
+    .info-box {
+        height: max-content;
+        width: auto;
+        margin: 1rem;
+    }
+
+    .info-box * {
+        margin: 0.5rem 1rem;
+        font-size: 1.5rem;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    footer ul {
+        justify-content: center;
+    }
+
+    footer li {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 445px) {
+    #about {
+        padding: 4rem;
+    }
+   
+}
